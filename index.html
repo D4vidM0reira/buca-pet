@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/respansive.css">
+    <script src="src/js/script.js"></script>
     <title>Home</title>
 </head>
 <body>
     <section>
         <img src="src/images/logo.png" alt="logo-busca-pet">
-        <form action="" method="post">
-            <input placeholder="Seu Email" type="email" name="email" id="email">
-            <input placeholder="Sua Senha" type="password" name="senha" id="senha">
-            <button>Acessar conta</button>
+        <form action="" method="">
+            <input placeholder="Seu Email" type="email" name="email" id="email" required>
+            <input placeholder="Sua Senha" type="password" name="senha" id="senha" required>
+            <button onclick="verificaEmail()">Acessar conta</button>
             <!-- <footer>
                 <a href="">Esqueceu sua senha?</a>
             </footer> -->
