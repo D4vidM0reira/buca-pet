@@ -1,19 +1,19 @@
 :root {
-    --cor-primaria: #000;
+    --cor-primaria: #202020;
     --cor-secundaria: #fff;
-    --cor-tercearia: #f8b84b;
+    --cor-tercearia: #d6a247;
     --cor-fundo-sessao: #454545;
 }
 
 body {
-    background-color: var(--cor-tercearia);
+    background-color: var(--cor-fundo-sessao);
     font-family: sans-serif;
 }
 
 section {
     text-align: center;
-    background-color: var(--cor-fundo-sessao);
-    border: 2px solid var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-tercearia);
     width: 360px;
     height: 460px;
     padding: 15px;
@@ -21,17 +21,44 @@ section {
     border-radius: 10px;
 }
 
-input {
-    background-color: var(--cor-secundaria);
+.input-single {
+    position: relative;
+}
+
+.input-single label {
+    font-size: 16px;
+    position: absolute;
+    left: 12px;
+    bottom: 20px;
+    color: var(--cor-secundaria);
+    cursor: text;   
+    transition: .5s ease-in-out;
+}
+
+.input-single input {
+    background-color: var(--cor-primaria);
     width: 95%;
     margin-bottom: 15px;
     padding: 10px;
-    border-radius: 5px;
-    border: 2px solid var(--cor-primaria);
-    font-size: 15px;
+    border: 0;
+    border-bottom: 3px solid var(--cor-tercearia);
+    font-size: 16px;
+    color: white;
+    outline: 0;
 }
 
-div {
+.input-single input:focus, 
+.input-single input:valid {
+    border-bottom: 3px solid var(--cor-secundaria);
+}
+
+.input-single input:focus ~ label, 
+.input-single input:valid ~ label {
+    transform: translateY(-27px);
+    font-size: 12px;
+}
+
+.div-check-box {
     position: relative;
     padding: 15px;
 }
