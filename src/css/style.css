@@ -1,12 +1,12 @@
 :root {
-    --cor-primaria: #202020;
+    --cor-primaria: #10428B;
     --cor-secundaria: #fff;
-    --cor-tercearia: #d6a247;
-    --cor-fundo-sessao: #454545;
+    --cor-tercearia: #ffffff;
+    --cor-fundo-sessao: #f7aa04;
 }
 
 body {
-    background-color: var(--cor-fundo-sessao);
+    background-color:var(--cor-fundo-sessao);
     font-family: sans-serif;
     background-image: url(../images/image-removebg-preview.png);
 }
