@@ -5,66 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
-    <h1>formulário de cadastro do facebook</h1>
-    <form action="index.html" method="get">
-        <input type="text" name="nome" id="nome" placeholder="Nome">
-        <input type="text" name="sobreNome" id="sobreNome" placeholder="Sobre nome">
-        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email">
-        <input type="password" name="senha" id="senha" placeholder="Nova senha">
-
-        <br>
-        <br>
-
-        <label for="">Data de nascimento</label><br>
-        <select name="dia" id="">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-        
-        <select name="mes" id="">
-            <option value="jan">Jan</option>
-            <option value="Fev">Fev</option>
-            <option value="Mar">Mar</option>
-            <option value="Abr">Abr</option>
-            <option value="Mai">Mai</option>
-        </select>
-
-        <select name="ano" id="">
-            <option value="1999">1999</option>
-            <option value="2000">2000</option>
-            <option value="2001">2001</option>
-            <option value="2002">2002</option>
-            <option value="2003">2003</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label for="">Gênero</label><br>
-
-        <label for="masculino">Masculino</label>
-        <input type="radio" name="genero" id="masculino" value="masculino">
-
-        <label for="femenino">Femenino</label>
-        <input type="radio" name="genero" id="femenino" value="femenino">
-
-        <label for="personalizado">Personalizado</label>
-        <input type="radio" name="genero" id="personalizado" value="personalizado">
-
-        <br>
-        <br>
-
-        <input type="file" name="" id="">
-
-        <br>
-        <br>
-
-        <input type="submit" value="enviar">
-    </form>
+    <div class="wrapper">
+        <div class="form-container">
+          <h1>Criar Conta</h1>
+          <form>
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Endereço de e-mail</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Senha</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirmar Senha</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+              <button type="submit">Criar Conta</button>
+            </div>
+          </form>
+          <p>Já possui uma conta? <a href="login.html">Faça login</a></p>
+        </div>
+      </div>
 </body>
 </html>
