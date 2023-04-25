@@ -8,6 +8,7 @@
 body {
     background-color: var(--cor-fundo-sessao);
     font-family: sans-serif;
+    background-image: url(../images/image-removebg-preview.png);
 }
 
 section {
