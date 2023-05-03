@@ -5,9 +5,12 @@
   }
   
 body {
-    background-color: #f1f1f1;
+    background-color: #f7aa04;
     font-family: Arial, sans-serif;
+    background-image:url(../images/image-removebg-preview.png)
+
 }
+
 
 .wrapper {
     display: flex;
@@ -17,7 +20,7 @@ body {
 }
 
 .form-container {
-    background-color: #ffffff;
+    background-color: #10428b;
     border-radius: 5px;
     padding: 30px;
     box-shadow: 0px 0px 10px #cccccc;
@@ -28,6 +31,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
+    
 }
 
 .form-group {
