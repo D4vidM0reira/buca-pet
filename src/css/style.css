@@ -1,152 +1,48 @@
-:root {
-    --cor-primaria: #10428B;
-    --cor-secundaria: #fff;
-    --cor-tercearia: #ffffff;
-    --cor-fundo-sessao: #f7aa04;
-}
-
 body {
-    background-color:var(--cor-fundo-sessao);
-    font-family: sans-serif;
-    background-image: url(../images/image-removebg-preview.png);
+    height: 1900px;
 }
 
-section {
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    
+}
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+    
+    
+    
+
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.menu {
+    background-color: var(--cor-tercearia);
+    padding: 20px;
+    font-size: 16pt;
+    align-items: center;
+    position: block;
+    width: 100%;
+    position: fixed
+    
+    
+   
+}
+.mapa1 .img-mapa {
+    height: 400px;
+    width: 400px;
+    border: solid var(--cor-primaria);
+    
+}
+.mapa1 {
     text-align: center;
-    background-color: var(--cor-primaria);
-    border: 2px solid var(--cor-tercearia);
-    width: 360px;
-    height: 490px;
-    padding: 15px;
-    margin: 20px auto;
-    border-radius: 10px;
-}
+    
 
-.input-single {
-    position: relative;
-}
-
-.input-single label {
-    font-size: 16px;
-    position: absolute;
-    left: 12px;
-    bottom: 20px;
-    color: var(--cor-secundaria);
-    cursor: text;   
-    transition: .5s ease-in-out;
-}
-
-.input-single input {
-    background-color: var(--cor-primaria);
-    width: 95%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 0;
-    border-bottom: 3px solid var(--cor-tercearia);
-    font-size: 16px;
-    color: white;
-    outline: 0;
-}
-
-.input-single input:focus, 
-.input-single input:valid {
-    border-bottom: 3px solid var(--cor-secundaria);
-}
-
-.input-single input:focus ~ label, 
-.input-single input:valid ~ label {
-    transform: translateY(-27px);
-    font-size: 12px;
-}
-
-.div-check-box {
-    position: relative;
-    padding: 15px;
-}
-
-input[type="checkbox"] {
-    position: absolute;
-    right: 90%;
-    margin-bottom: 0;
-    width: 20px;
-    height: 20px;
-    top: 10px;
-}
-
-button {
-    position: relative;
-    color: var(--cor-secundaria);
-    padding: 10px;
-    width: 95%;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 2px solid var(--cor-tercearia);
-    background-color: var(--cor-fundo-sessao);
-}
-
-button:hover {
-    background-color: var(--cor-primaria);
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: .2s;
-    font-weight: 500;
-    border: 3px solid var(--cor-tercearia);
-}
-
-img {
-    border-radius: 20px;
-    width: 30%;
-    height: 23%;
-    margin-bottom: 15px;
-}
-
-.icon {
-    font-size: 20px;
-    position: absolute;
-    right: 87%;
-    top: 25%;
-}
-
-a {
-    color: var(--cor-secundaria);
-    text-decoration: none;
-    margin-left: 43%;
-}
-
-span {
-    position: absolute;
-    right: 30%;
-    top: 12px;
-    width: 60%;
-    height: 40%;
-    color: var(--cor-secundaria);
-}
-
-label {
-    display: block;
-    color: var(--cor-secundaria);
-    margin-top: 10px;
-    margin-right: 56px;
-}
-
-a {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.label2 {
-    display: block;
-    color: var(--cor-secundaria);
-    margin-top: 10px;
-    margin-right: 56px;
-    width: 120%;
-}
-
-.label2 .criarConta {
-    margin-left: 0;
-}
-  
-a:hover {
-    text-decoration: underline;
+    
 }
