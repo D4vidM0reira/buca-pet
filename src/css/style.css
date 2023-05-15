@@ -26,3 +26,8 @@ body {
     width: 100%;
     position: fixed
 }
+#mapa {
+    width: 500px;
+    height: 400px;
+    margin-top: 100px;  
+}
