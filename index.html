@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY-eP4IIMv4C-LKzEYyMvrNyhZl9Xahk8%22%3E"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY-eP4IIMv4C-LKzEYyMvrNyhZl9Xahk8"></script>
         <script>
           function initMap() {
             var meuMapa = new google.maps.Map(document.getElementById('mapa'), {
@@ -22,17 +22,14 @@
 
 </head>
 <body onload="initMap()">
-    <div id="mapa" style="height: 500px; width: 100%;"></div>
-        <nav class="menu">
-        <ul>
-            <li>Home</li>
-            <li>Pets Perdidos</li>
-            <li>Informações</li>
-            <li>Contato</li>
-        </ul>
-    </nav>
-        
-        
-            
+  <nav class="menu">
+    <ul>
+      <li>Home</li>
+      <li>Pets Perdidos</li>
+      <li>Informações</li>
+      <li>Contato</li>
+    </ul>
+  </nav>
+  <div id="mapa"></div>
 </body>
 </html>

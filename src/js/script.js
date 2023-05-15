@@ -23,27 +23,31 @@ function verificaEmail() {
     }
 }
 
-// function verificaSenha() {
-//     const senha = document.getElementById("senha").value;
-//     const caractereEspecial = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-//     const letraMaiuscula = /[A-Z]/;
-//     const numero = /\d/;
-//     const msg = ''
-//     if (senha != "") {
-//         if (!caractereEspecial.test(senha)) {
-//             return false;
-//             msg += "A senha deve conter pelo menos um caracter especial"
-//         }
-//         if (!letraMaiuscula.test(senha)) {
-//             return false;
-//             msg += "A senha deve conter pelo menos uma letra maiúscula"
-//         }
-//         if (!numero.test(senha)) {
-//             return false;
-//             msg += "A senha deve conter pelo menos um número"
-//         }
-//         return true;
-//     } else {
-//         alert("O preenchimento do campo senha é obrigatório!")
-//     }
-// }
+function validaFormulario() {
+    verificaSenha();
+}
+
+function verificaSenha() {
+    const senha = document.getElementById("senha").value;
+    const caractereEspecial = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+    const letraMaiuscula = /[A-Z]/;
+    const numero = /\d/;
+    const msg = ''
+    if (senha != "") {
+        if (!caractereEspecial.test(senha)) {
+            return false;
+            msg += "A senha deve conter pelo menos um caracter especial"
+        }
+        if (!letraMaiuscula.test(senha)) {
+            return false;
+            msg += "A senha deve conter pelo menos uma letra maiúscula"
+        }
+        if (!numero.test(senha)) {
+            return false;
+            msg += "A senha deve conter pelo menos um número"
+        }
+        return true;
+    } else {
+        alert("O preenchimento do campo senha é obrigatório!")
+    }
+}

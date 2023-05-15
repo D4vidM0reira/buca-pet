@@ -2,6 +2,13 @@ body {
     height: 1900px;
 }
 
+.menu {
+    background-color: var(--cor-tercearia);
+    padding: 20px;
+    font-size: 16pt;
+    align-items: center;
+    width: 100%;
+}
 
 .menu ul {
     list-style: none;
@@ -17,12 +24,9 @@ body {
 .menu li:last-child {
     margin-right: 0;
 }
-.menu {
-    background-color: var(--cor-tercearia);
-    padding: 20px;
-    font-size: 16pt;
-    align-items: center;
-    position: block;
-    width: 100%;
-    position: fixed
+
+#mapa {
+    width: 300px;
+    height: 400px;
+    margin: 80px auto;
 }
