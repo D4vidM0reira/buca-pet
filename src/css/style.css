@@ -9,15 +9,10 @@ body {
     padding: 0;
     display:flex;
     justify-content: center;
-    
 }
 .menu li {
     display: inline-block;
     margin-right: 20px;
-    
-    
-    
-
 }
 .menu li:last-child {
     margin-right: 0;
@@ -30,19 +25,4 @@ body {
     position: block;
     width: 100%;
     position: fixed
-    
-    
-   
-}
-.mapa1 .img-mapa {
-    height: 400px;
-    width: 400px;
-    border: solid var(--cor-primaria);
-    
-}
-.mapa1 {
-    text-align: center;
-    
-
-    
 }
