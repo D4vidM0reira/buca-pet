@@ -24,7 +24,10 @@ function verificaEmail() {
 }
 
 function validaFormulario() {
-    verificaSenha();
+    verificaEmail()
+    if (verificaSenha()) {
+        alert(msg)
+    }
 }
 
 function verificaSenha() {
@@ -36,7 +39,7 @@ function verificaSenha() {
     if (senha != "") {
         if (!caractereEspecial.test(senha)) {
             return false;
-            msg += "A senha deve conter pelo menos um caracter especial"
+            msg = "A senha deve conter pelo menos um caracter especial"
         }
         if (!letraMaiuscula.test(senha)) {
             return false;
