@@ -1,15 +1,25 @@
 function verificaCampos() {
+    const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
-    const senha = document.getElementById("senha").value;
-    if (email != "") {
-        verificaEmail()
-        if (verificaEmail()) {
-            if (senha == "") {
+    const senha1 = document.getElementById("senha1").value;
+    const senha2 = document.getElementById("senha2").value;
+    if (nome != "") {
+        if (email != "") {
+            verificaEmail();
+            if (senha1 != "") {
+                if (senha2 != "") {
+                    verificaSenha();
+                } else {
+                    alert('O preenchimento do campo de confirmação de senha é obrigatório!')                    
+                }
+            } else {
                 alert('O preenchimento do campo de senha é obrigatório!')
-            } 
+            }
+        } else {
+            alert("O preenchimento do campo de email é obrigatório")
         }
     } else {
-        alert('O preenchimento do campo de email é obrigatório!')
+        alert('O preenchimento do campo de nome é obrigatório!')
     }
 }
 
@@ -23,34 +33,33 @@ function verificaEmail() {
     }
 }
 
-function validaFormulario() {
-    verificaEmail()
-    if (verificaSenha()) {
-        alert(msg)
-    }
+function cadastrar() {
+    verificaCampos();
 }
 
 function verificaSenha() {
-    const senha = document.getElementById("senha").value;
-    const caractereEspecial = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-    const letraMaiuscula = /[A-Z]/;
-    const numero = /\d/;
-    const msg = ''
-    if (senha != "") {
-        if (!caractereEspecial.test(senha)) {
-            return false;
-            msg = "A senha deve conter pelo menos um caracter especial"
+    const senha1 = document.getElementById("senha1").value;
+    const senha2 = document.getElementById("senha2").value;
+    let msg = '';
+    if (senha1 == senha2) {
+        let temLetraMaiuscula = /[A-Z]/.test(senha1); 
+        let temNumero = /\d/.test(senha1);
+        let temCaractereEspecial = /[!@#$%^&*()\-=_+{}[\]:;'"|,.<>/?]/.test(senha1); 
+        if (temLetraMaiuscula && temNumero && temCaractereEspecial) {
+            alert(`A senha: ${senha1}, é válida`)
+        } else {
+            if (!temLetraMaiuscula) {
+                msg += "- A senha deve conter pelo menos uma letra maiúscula \n"
+            }
+            if (!temNumero) {
+                msg += "- A senha deve conter pelo menos um número \n"
+            }
+            if (!temCaractereEspecial) {
+                msg += "- A senha deve conter pelo menos um caracter especial \n"
+            }
+            alert(msg)
         }
-        if (!letraMaiuscula.test(senha)) {
-            return false;
-            msg += "A senha deve conter pelo menos uma letra maiúscula"
-        }
-        if (!numero.test(senha)) {
-            return false;
-            msg += "A senha deve conter pelo menos um número"
-        }
-        return true;
     } else {
-        alert("O preenchimento do campo senha é obrigatório!")
+        alert("Ops! Parece que as senhas não coincidem. Por favor, verifique novamente.")
     }
 }
