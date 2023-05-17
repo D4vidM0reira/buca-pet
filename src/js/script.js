@@ -46,7 +46,7 @@ function verificaSenha() {
         let temNumero = /\d/.test(senha1);
         let temCaractereEspecial = /[!@#$%^&*()\-=_+{}[\]:;'"|,.<>/?]/.test(senha1); 
         if (temLetraMaiuscula && temNumero && temCaractereEspecial) {
-            alert(`A senha: ${senha1}, é válida`)
+            alert(`Senha: ${senha1}, válida`)
         } else {
             if (!temLetraMaiuscula) {
                 msg += "- A senha deve conter pelo menos uma letra maiúscula \n"
@@ -62,4 +62,8 @@ function verificaSenha() {
     } else {
         alert("Ops! Parece que as senhas não coincidem. Por favor, verifique novamente.")
     }
+}
+
+function exibeSenha() {
+    alert('exibe senha')
 }
