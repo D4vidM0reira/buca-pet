@@ -1,7 +1,23 @@
 body {
     height: 1900px;
 }
+nav#menu {
+    display: block;
 
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 550px;
+
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+}
 .menu {
     background-color: var(--cor-tercearia);
     padding: 20px;
