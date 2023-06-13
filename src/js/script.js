@@ -3,34 +3,23 @@ function verificaCampos() {
     const email = document.getElementById("email").value;
     const senha1 = document.getElementById("senha1").value;
     const senha2 = document.getElementById("senha2").value;
-    if (nome != "") {
-        if (email != "") {
-            verificaEmail();
-            if (senha1 != "") {
-                if (senha2 != "") {
-                    verificaSenha();
-                } else {
-                    alert('O preenchimento do campo de confirmação de senha é obrigatório!')                    
-                }
-            } else {
-                alert('O preenchimento do campo de senha é obrigatório!')
-            }
-        } else {
-            alert("O preenchimento do campo de email é obrigatório")
-        }
-    } else {
-        alert('O preenchimento do campo de nome é obrigatório!')
-    }
+    (nome != "") ? 
+        (email != "") ?
+            verificaEmail() ? 
+                (senha1 != "") ?
+                    (senha2 != "") ?
+                        verificaSenha()
+                   : alert('O preenchimento do campo de confirmação de senha é obrigatório!')       
+                : alert('O preenchimento do campo de senha é obrigatório!')
+            : ""
+        : alert("O preenchimento do campo de email é obrigatório")
+    : alert('O preenchimento do campo de nome é obrigatório!')
 }
 
 function verificaEmail() {
     const email = document.getElementById("email").value;
-    if (!email.includes("@")) {
-        alert("Endereço de email inválido! Certifique-se de digitar o caractere '@'");
-        return false
-    } else {
-        return true
-    }
+    (email.includes("@")) ? "" 
+    : alert("Endereço de email inválido! Certifique-se de digitar o caractere '@'")
 }
 
 function cadastrar() {
