@@ -1,8 +1,78 @@
 body {
     height: 1900px;
+
+}
+nav#menu {
+    display: flex;
+    position: fixed;
+
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position:fixed;
+    top: 0px;
+    left: 500px;
+    
+
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #fdd03c;
+    padding: 10px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+header#cabecalho {
+    border: solid #fdd03c;
+    background-color: #fdd03c;
+    position:fixed;
+    display: block;
+    width: 1550px;
+    height: 50px;
+    top: 0px;
+    z-index: 2;
+    
+}
+section#barraLateral {
+    position:fixed;
+    border: solid #1d18b0;
+    top: 0px;
+    padding-right: 152px;
+    padding-bottom: 776px;
+    background-color: #1d18b0;
+    z-index: 3;
+    width: 330px;
+}
+input#nomeperfil {
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 14px;
+    left: 113px;
+    top: 20px;
+    position: relative;
+    border-radius: 4%;
+}
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+    
+}
+#cachorro {
+    width: 90px;
+    height: 99px;
+    border-radius: 50%;
+    display:none;
+    z-index: 6;
 }
 
-.menu {
+/*.menu {
     background-color: var(--cor-tercearia);
     padding: 20px;
     font-size: 16pt;
@@ -24,9 +94,13 @@ body {
 .menu li:last-child {
     margin-right: 0;
 }
+*/
 
 #mapa {
     width: 300px;
     height: 400px;
     margin: 80px auto;
+    z-index: 1;
 }
+
+

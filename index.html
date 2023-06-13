@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +10,38 @@
     <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/style.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY-eP4IIMv4C-LKzEYyMvrNyhZl9Xahk8"></script>
-        <script>
-          function initMap() {
+    <script>
+        function initMap() {
             var meuMapa = new google.maps.Map(document.getElementById('mapa'), {
-              center: {lat: -23.5505, lng: -46.6333},
-              zoom: 10
+                center: { lat: -23.5505, lng: -46.6333 },
+                zoom: 10
             });
-          }
-        </script>
-      </head>
-      
-
+        }
+    </script>
 </head>
 <body onload="initMap()">
-  <nav class="menu">
-    <ul>
-      <li>Home</li>
-      <li>Pets Perdidos</li>
-      <li>Informações</li>
-      <li>Contato</li>
-    </ul>
-  </nav>
-  <div id="mapa"></div>
+    <div id="interface">
+        <header id="cabecalho">
+            <nav id="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Pets Perdidos</li>
+                    <li>Informações</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="mapa" style="height: 400px; width: 600px; margin-top: 100px;"></div>
+    <section id="barraLateral">
+        <div id="fotoperfil" class="foto-perfil">
+            <img id="cachorro" src="src/images/cachorro.png">
+            <input type="text" id="nomeperfil">
+        </div>
+        
+        
+    </section>
+
 </body>
+
 </html>
