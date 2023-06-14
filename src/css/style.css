@@ -1,47 +1,39 @@
 body {
     background-color: var(--cor-primaria);
 }
-
 .menu-lateral {
     width: 100px;
     background-color: var(--cor-primaria); 
     padding: 20px; 
     border-right: 1px solid #fff;
 }
-  
 .menu-lateral ul {
     list-style-type: none; 
     padding: 0;
     margin: 0;
 }
-
 .menu-lateral li {
     margin-bottom: 10px; 
 }
-
 .menu-lateral a {
     text-decoration: none; 
     color: #333; 
 }
-
 .menu-lateral a:hover {
     color: #000; 
 }
-
 .icon {
     color: #fff;
     font-size:250%;
     margin-bottom: 77%;
     margin-left: 15%;
 }
-
 .logoRedonda {
     border-radius: 50%;
     width: 15%;
     margin-left: 69%;
     margin-top: 50%;
 }
-
 #mapa {
 
     width: 500px;

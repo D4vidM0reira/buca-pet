@@ -20,13 +20,12 @@ section {
 }
 
 .input-single label {
-    font-size: 16px;
     position: absolute;
     left: 12px;
-    bottom: 20px;
+    bottom: 40px;
     color: var(--cor-secundaria);
     cursor: text;   
-    transition: .5s ease-in-out;
+    margin-bottom: 10px;
 }
 
 .input-single input {
@@ -41,15 +40,10 @@ section {
     outline: 0;
 }
 
-.input-single input:focus, 
-.input-single input:valid {
-    border-bottom: 3px solid var(--cor-secundaria);
-}
-
 .input-single input:focus ~ label, 
 .input-single input:valid ~ label {
-    transform: translateY(-27px);
     font-size: 12px;
+    margin-bottom: 10px;
 }
 
 .div-check-box {

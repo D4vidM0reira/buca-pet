@@ -50,6 +50,7 @@ input {
     width: 100%;
     border: 2px solid var(--cor-tercearia);
     border-radius: 3px;
+    color: #fff;
 }
 
 button {
