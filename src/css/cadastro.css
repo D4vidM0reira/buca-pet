@@ -5,7 +5,7 @@
   }
   
 body {
-    background-color: #f7aa04;
+    background-color: var(--cor-primaria);
     font-family: Arial, sans-serif;
     background-image:url(../images/image-removebg-preview.png)
 
@@ -20,11 +20,12 @@ body {
 }
 
 .form-container {
-    background-color: #10428b;
+    background-color: var(--cor-primaria);
     border-radius: 5px;
     padding: 30px;
-    box-shadow: 0px 0px 10px #cccccc;
     width: 400px;
+    border: 2px solid var(--cor-tercearia);
+    color: var(--cor-secundaria);
 }
 
 .form-container h1 {
@@ -46,29 +47,31 @@ label {
 }
 
 input {
+    background: none;
     padding: 10px;
     width: 100%;
-    border: 1px solid #cccccc;
+    border: 2px solid var(--cor-tercearia);
     border-radius: 3px;
 }
 
 button {
-    background-color: #4285F4;
-    color: #ffffff;
+    background-color: var(--cor-primaria);
     padding: 10px 20px;
-    border: none;
+    border: 2px solid var(--cor-tercearia);
     border-radius: 3px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
+    color: var(--cor-secundaria);
 }
 
 button:hover {
-    background-color: #357ae8;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-fundo-sessao);
 }
 
 a {
-    color: #4285F4;
+    color: var(--cor-segundaria);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -76,4 +79,5 @@ a {
   
 a:hover {
     text-decoration: underline;
+    color: var(--cor-tercearia);
 }

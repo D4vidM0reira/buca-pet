@@ -10,14 +10,6 @@
     <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/style.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY-eP4IIMv4C-LKzEYyMvrNyhZl9Xahk8"></script>
-    <script>
-        function initMap() {
-            var meuMapa = new google.maps.Map(document.getElementById('mapa'), {
-                center: { lat: -23.5505, lng: -46.6333 },
-                zoom: 10
-            });
-        }
-    </script>
 </head>
 <body onload="initMap()">
     <div id="interface">
@@ -38,10 +30,14 @@
             <img id="cachorro" src="src/images/cachorro.png">
             <input type="text" id="nomeperfil">
         </div>
-        
-        
     </section>
-
+    <script>
+        function initMap() {
+            var meuMapa = new google.maps.Map(document.getElementById('mapa'), {
+                center: { lat: -23.5505, lng: -46.6333 },
+                zoom: 10
+            });
+        }
+    </script>
 </body>
-
 </html>
